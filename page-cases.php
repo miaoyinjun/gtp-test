@@ -1,5 +1,6 @@
 <?php
 /**
+ * Template Name: 客户案例页面
  * Cases page template.
  *
  * @package DingchengB2BRealty

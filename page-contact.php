@@ -1,5 +1,6 @@
 <?php
 /**
+ * Template Name: 商务咨询页面
  * Contact page template.
  *
  * @package DingchengB2BRealty

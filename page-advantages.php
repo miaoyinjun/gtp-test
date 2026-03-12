@@ -1,5 +1,6 @@
 <?php
 /**
+ * Template Name: 核心优势页面
  * Advantages page template.
  *
  * @package DingchengB2BRealty

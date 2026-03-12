@@ -1,5 +1,6 @@
 <?php
 /**
+ * Template Name: 关于我们页面
  * About page template.
  *
  * @package DingchengB2BRealty
