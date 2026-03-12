@@ -15,8 +15,8 @@ get_header();
         <h1>为成长型与集团型企业提供高效选址与资产增值方案</h1>
         <p class="subtitle">覆盖全国核心城市，整合办公、园区、仓储与投资管理资源，帮助企业降低不动产决策成本。</p>
         <div class="hero-actions">
-          <a href="#contact" class="btn">预约顾问</a>
-          <a href="#cases" class="btn btn-outline">查看案例</a>
+          <a href="<?php echo esc_url(dingcheng_b2b_realty_page_url('contact')); ?>" class="btn">预约顾问</a>
+          <a href="<?php echo esc_url(dingcheng_b2b_realty_page_url('cases')); ?>" class="btn btn-outline">查看案例</a>
         </div>
       </div>
       <div class="kpi-card">
@@ -31,72 +31,31 @@ get_header();
     </div>
   </section>
 
-  <section id="services" class="section">
+  <section class="section">
     <div class="container">
-      <h2>业务板块</h2>
+      <h2>我们的服务入口</h2>
       <div class="cards">
-        <article class="card"><h3>企业办公选址</h3><p>写字楼租售、总部办公定制与搬迁落位支持，缩短决策周期。</p></article>
-        <article class="card"><h3>产业园区招商</h3><p>结合产业方向与政策需求，匹配研发、生产与展示复合空间。</p></article>
-        <article class="card"><h3>仓储物流布局</h3><p>围绕供应链节点优化仓网结构，提升周转效率与成本控制能力。</p></article>
-        <article class="card"><h3>资产运营管理</h3><p>提供租户策略、收益优化、改造升级与托管运营全周期服务。</p></article>
+        <article class="card">
+          <h3>业务板块</h3>
+          <p>覆盖办公选址、产业园区、仓储物流与资产运营四大服务方向。</p>
+          <a class="btn btn-sm" href="<?php echo esc_url(dingcheng_b2b_realty_page_url('services')); ?>">进入页面</a>
+        </article>
+        <article class="card">
+          <h3>客户案例</h3>
+          <p>查看不同产业客户的落地实践与可量化成果。</p>
+          <a class="btn btn-sm" href="<?php echo esc_url(dingcheng_b2b_realty_page_url('cases')); ?>">查看案例</a>
+        </article>
+        <article class="card">
+          <h3>核心优势</h3>
+          <p>跨城资源协同、数据驱动决策、全流程交付能力。</p>
+          <a class="btn btn-sm" href="<?php echo esc_url(dingcheng_b2b_realty_page_url('advantages')); ?>">了解优势</a>
+        </article>
+        <article class="card">
+          <h3>关于我们</h3>
+          <p>了解鼎城资产的发展历程与服务理念。</p>
+          <a class="btn btn-sm" href="<?php echo esc_url(dingcheng_b2b_realty_page_url('about')); ?>">了解更多</a>
+        </article>
       </div>
-    </div>
-  </section>
-
-  <section id="cases" class="section alt">
-    <div class="container">
-      <h2>客户案例</h2>
-      <div class="timeline">
-        <div><span>制造业集团</span><p>华东总部搬迁项目，8 周完成 1.8 万㎡办公与研发空间整合。</p></div>
-        <div><span>跨境电商企业</span><p>华南仓储升级项目，仓储成本下降 17%，履约时效提升 22%。</p></div>
-        <div><span>新能源企业</span><p>西南产业园落地项目，完成“办公+中试+展示”三位一体园区部署。</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="advantages" class="section">
-    <div class="container">
-      <h2>核心优势</h2>
-      <div class="features">
-        <div><h3>跨城资源协同</h3><p>总部与分支统一评估模型，实现多城市同步选址与统一谈判。</p></div>
-        <div><h3>数据驱动决策</h3><p>租金走势、供需热力、通勤与人才数据多维对比，降低决策盲区。</p></div>
-        <div><h3>全流程交付</h3><p>从需求诊断、谈判签约到入驻筹备与后续运营，一站式对接。</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="about" class="section alt">
-    <div class="container about-grid">
-      <div>
-        <h2>关于鼎城资产</h2>
-        <p>鼎城资产成立于 2011 年，专注企业房产咨询与资产运营服务，服务对象包括先进制造、互联网、消费品牌、医疗健康等行业。</p>
-        <p>我们坚持“以企业经营目标倒推空间策略”，通过专业顾问团队和数字化工具，帮助客户实现稳健扩张与长期价值增长。</p>
-      </div>
-      <aside class="quote">
-        <p>“空间不是成本项，而是组织效率与品牌形象的放大器。”</p>
-        <span>— 鼎城资产研究院</span>
-      </aside>
-    </div>
-  </section>
-
-  <section id="contact" class="section contact">
-    <div class="container">
-      <h2>商务咨询</h2>
-      <p>留下企业信息，我们将在 1 个工作日内安排顾问与您联系。</p>
-      <form class="contact-form" id="contact-form">
-        <input type="text" placeholder="企业名称" required>
-        <input type="text" placeholder="联系人" required>
-        <input type="tel" placeholder="联系电话" required>
-        <select required>
-          <option value="">咨询方向</option>
-          <option>办公选址</option>
-          <option>园区招商</option>
-          <option>仓储物流</option>
-          <option>资产运营</option>
-        </select>
-        <button type="submit" class="btn">提交咨询</button>
-      </form>
-      <p id="form-msg" class="form-msg" aria-live="polite"></p>
     </div>
   </section>
 </main>

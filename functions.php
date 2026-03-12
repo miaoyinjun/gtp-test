@@ -34,3 +34,22 @@ function dingcheng_b2b_realty_enqueue_assets(): void
     );
 }
 add_action('wp_enqueue_scripts', 'dingcheng_b2b_realty_enqueue_assets');
+
+/**
+ * Get a stable page URL by slug.
+ *
+ * Works with both pretty permalinks and plain query-string permalinks.
+ *
+ * @param string $slug Page slug.
+ * @return string
+ */
+function dingcheng_b2b_realty_page_url(string $slug): string
+{
+    $page = get_page_by_path($slug);
+
+    if ($page instanceof WP_Post) {
+        return get_permalink($page);
+    }
+
+    return home_url('/' . trim($slug, '/') . '/');
+}
